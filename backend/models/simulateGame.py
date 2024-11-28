@@ -74,11 +74,11 @@ def check_state(board):
 
 def game_result(state):
     if state == "Player NN wins":
-        return 5
+        return 1
     elif state == "Player MM wins":
-        return -5
+        return -1
     elif state == "Draw":
-        return 0
+        return -1
     else:
         return 0 
 
