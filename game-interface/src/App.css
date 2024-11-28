@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  font-family: 'Arial', sans-serif;
+  color: black; /* Mudando a cor do texto para preto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo na horizontal */
+  justify-content: center; /* Centraliza o conteúdo na vertical */
+  height: 100vh; /* Preenche a altura da tela */
+}
+
+/* Heading Styles */
+.main-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: black; /* Cor do título em preto */
+}
+
+.training-heading, .game-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black; /* Cor do subtítulo em preto */
+}
+
+/* Button Styles */
+.btn-start {
+  font-size: 20px;
+  background-color: #2a5298;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #1e3c72;
+  transform: scale(1.05);
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: #dfe4ea;
+  transform: scale(1.1);
+}
+
+.square:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.game-board {
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+/* Text Styling */
+.status-text {
+  font-size: 18px;
+  color: black; /* Cor do status em preto */
+}
+
+.game-message {
+  font-size: 18px;
+  margin-top: 10px;
+  color: black; /* Cor da mensagem do jogo em preto */
+}
